@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "deathtrack:item/death_compass"
+  }
+}
