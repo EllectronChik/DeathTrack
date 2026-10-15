@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "homepage": "https://github.com/EllectronChik/DeathTrack",
+    "sources": "https://github.com/EllectronChik/DeathTrack"
+  },
+  "license": "${license}",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.ellectronchik.deathtrack.Deathtrack"
+    ]
+  },
+  "mixins": [
+    "${mod_id}.mixins.json",
+    "${mod_id}.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "${fabric_loader_version_range}",
+    "fabric-api": "${fabric_api_version_range}",
+    "minecraft": "${fabric_minecraft_version_range}",
+    "java": ">=${java_version}"
+  }
+}

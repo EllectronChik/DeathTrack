@@ -1,0 +1,29 @@
+[versions]
+java-version = "25"
+minecraft-version = "26.3"
+
+fabric-loom-version = "1.18.4"
+fabric-loader-version = "0.19.5"
+fabric-api-version = "0.163.0+26.3"
+
+neoforged-moddev-version = "2.0.148"
+neoforge-version = "26.3.0.77"
+neo-form-version = "26.3-1"
+
+sponge-mixin-version = "0.17.4+mixin.0.8.7"
+mixinextras-common-version = "0.5.5"
+
+[libraries]
+
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft-version" }
+
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader-version" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api-version" }
+
+sponge-mixin = { module = "net.fabricmc:sponge-mixin", version.ref = "sponge-mixin-version" }
+mixinextras-common = { module = "io.github.llamalad7:mixinextras-common", version.ref = "mixinextras-common-version" }
+
+
+[plugins]
+fabric-loom = { id = "net.fabricmc.fabric-loom", version.ref = "fabric-loom-version" }
+neoforged-moddev = { id = "net.neoforged.moddev", version.ref = "neoforged-moddev-version" }
