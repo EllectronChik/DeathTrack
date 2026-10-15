@@ -9,6 +9,8 @@ public class Deathtrack {
 
   public Deathtrack(IEventBus eventBus) {
     NeoForgeItems.ITEMS.register(eventBus);
+    eventBus.addListener(NeoForgeItems::addCreativeTabContents);
+
     CommonClass.init();
   }
 }
